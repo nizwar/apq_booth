@@ -1,0 +1,37 @@
+<html> 
+<head>
+    <title>APQ - Booth</title> 
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <script src="/assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <!-- Screen Background -->  
+            <img id="booth" src="/assets/images/22.jpg"> 
+
+            <img id="btn_mteam" rotation="0 -10.32 4" position="2.25334 -1.95817 6" src="/assets/images/buttons/button_m-team.png">
+            <img id="btn_video" position="-0.57143 -1.35378 6" src="/assets/images/buttons/button_video.png">
+            <img id="btn_poster" src="/assets/images/buttons/button_poster.png">
+        </a-assets>
+        
+        <a-camera id="camera" rotation="0 0 0" position="0 5 0" look-controls-enabled="false">
+            <a-entity position="0 0 -10.8" id="parent" position>
+                <a-image rotation="0 0 0" id="bg" material="src:#booth" scale="19.140 9.770 1.35" position="0 -0.05922 5">
+                </a-image>
+                <a-image id="btn_video" material="src:#btn_video" rotation="0 0 0" position="0 0 6" scale="1.160 0.420 1"></a-image>
+                <a-image id="btn_mteam" material="src:#btn_mteam" rotation="0 -18.230 0" position="3.049 -2.074 6" scale="1.030 0.330 1"></a-image>
+                <a-image id="btn_poster" material="src:#btn_poster" rotation="0 28.700 1.030" position="-3.227 -1.892 6" scale="1.160 0.420 1"></a-image>
+            </a-entity>
+        </a-camera>
+    </a-scene>
+
+    <script src="assets/js/panoramic.js"></script>
+</body>
+</html>

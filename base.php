@@ -1,0 +1,71 @@
+<?php
+    $booth = $_GET["booth"];
+
+?>
+<html>
+<head>
+    <title>APQ - Booth</title>
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon_io/favicon-16x16.png"> -->
+
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <script src="/assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <!-- Screen Background -->
+            <img id="tunnel" src="/assets/images/0.jpg">
+            <img id="psc" src="/assets/images/1.jpg">
+            <img id="ip_expo" src="/assets/images/2.jpg">
+            <img id="info_lounge" src="/assets/images/3.jpg">
+            <img id="photo_booth" src="/assets/images/4.jpg">
+            <img id="blue_regsumbagut" src="/assets/images/5.jpg">
+            <img id="blue_regjbb" src="/assets/images/6.jpg">
+            <img id="blue_regjbt" src="/assets/images/7.jpg">
+            <img id="blue_regjatim" src="/assets/images/8.jpg">
+            <img id="blue_regkalimantan" src="/assets/images/9.jpg">
+            <img id="blue_ptpr" src="/assets/images/10.jpg">
+            <img id="blue_ppn" src="/assets/images/11.jpg">
+            <img id="red_piep" src="/assets/images/12.jpg">
+            <img id="red_pep" src="/assets/images/13.jpg">
+            <img id="red_phe" src="/assets/images/14.jpg">
+            <img id="red_pdsi" src="/assets/images/15.jpg">
+            <img id="red_pepc" src="/assets/images/16.jpg">
+            <img id="red_elnusa" src="/assets/images/17.jpg">
+            <img id="red_phi" src="/assets/images/18.jpg">
+            <img id="white_rudumai" src="/assets/images/19.jpg">
+            <img id="white_ruplaju" src="/assets/images/20.jpg">
+            <img id="white_rucilacap" src="/assets/images/21.jpg">
+            <img id="white_rubalikpapan" src="/assets/images/22.jpg">
+            <img id="white_rubalongan" src="/assets/images/23.jpg">
+            <img id="green_ptk" src="/assets/images/24.jpg">
+            <img id="green_pertagas" src="/assets/images/25.jpg">
+            <img id="green_direknontek" src="/assets/images/26.jpg">
+            <img id="green_pge" src="/assets/images/27.jpg">
+
+            <img id="btn_mteam" src="/assets/images/buttons/button_m-team.png">
+            <img id="btn_video" src="/assets/images/buttons/button_video.png">
+            <img id="btn_poster" src="/assets/images/buttons/button_poster.png">
+        </a-assets>
+        <a-camera id="camera" rotation="0 0 0" position="0 5 0" look-controls-enabled="false">
+            <a-entity position="0 0 -10.8" id="parent" position>
+                <a-image rotation="0 0 0" id="bg" material="src:#<?php echo $booth?>" scale="19.140 9.770 1.35" position="0 -0.026 5"></a-image> 
+                <a-image material="src:#btn_video" rotation="0 0 0" position="0 0 6" scale="1.160 0.420 1"></a-image>
+                <a-image material="src:#btn_mteam" rotation="0 -18.230 0" position="3.049 -2.074 6" scale="1.030 0.330 1"></a-image>
+                <a-image material="src:#btn_poster" rotation="0 20.000 0" position="-1.180 -2.247 6" scale="1.160 0.420 1"></a-image>
+            </a-entity>
+        </a-camera>
+    </a-scene>
+
+    <script src="assets/js/panoramic.js"></script>
+</body>
+
+</html>
