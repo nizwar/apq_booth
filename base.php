@@ -51,16 +51,16 @@
             <img id="green_direknontek" src="/assets/images/26.jpg">
             <img id="green_pge" src="/assets/images/27.jpg">
 
-            <img id="btn_mteam" src="/assets/images/buttons/button_m-team.png">
-            <img id="btn_video" src="/assets/images/buttons/button_video.png">
-            <img id="btn_poster" src="/assets/images/buttons/button_poster.png">
+            <img id="img_mteam" src="/assets/images/buttons/button_m-team.png">
+            <img id="img_video" src="/assets/images/buttons/button_video.png">
+            <img id="img_poster" src="/assets/images/buttons/button_poster.png">
         </a-assets>
         <a-camera id="camera" rotation="0 0 0" position="0 5 0" look-controls-enabled="false">
             <a-entity position="0 0 -10.8" id="parent" position>
                 <a-image rotation="0 0 0" id="bg" material="src:#<?php echo $booth?>" scale="19.140 9.770 1.35" position="0 -0.026 5"></a-image> 
-                <a-image material="src:#btn_video" rotation="0 0 0" position="0 0 6" scale="1.160 0.420 1"></a-image>
-                <a-image material="src:#btn_mteam" rotation="0 -18.230 0" position="3.049 -2.074 6" scale="1.030 0.330 1"></a-image>
-                <a-image material="src:#btn_poster" rotation="0 20.000 0" position="-1.180 -2.247 6" scale="1.160 0.420 1"></a-image>
+                <a-image id="btn_video" material="src:#img_video" rotation="0 0 0" position="0 0 6" scale="1.160 0.420 1"></a-image>
+                <a-image id="btn_mteam" material="src:#img_mteam" rotation="0 -18.230 0" position="3.049 -2.074 6" scale="1.030 0.330 1"></a-image>
+                <a-image id="btn_poster" material="src:#img_poster" rotation="0 20.000 0" position="-1.180 -2.247 6" scale="1.160 0.420 1"></a-image>
             </a-entity>
         </a-camera>
     </a-scene>
